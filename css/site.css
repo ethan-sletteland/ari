@@ -10,6 +10,11 @@ a {
     color: darkorange;
 }
 
+button {
+    border-radius: 0;
+    background-color: blueviolet;
+}
+
 header {
     position: sticky;
 }
