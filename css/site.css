@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: chartreuse;
+    font-family: 'Roboto Mono', sans-serif;
+    /*font-size: 48px;*/
+}
+
+a {
+    color: darkorange;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+}
+
+article {
+
+}
