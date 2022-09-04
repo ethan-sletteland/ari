@@ -16,9 +16,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/site.css">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
 
@@ -33,10 +33,13 @@
 
   <marquee>ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI ARI</marquee>
 
+  <button class="mobile-nav" onclick="toggleNav()">🍔</button>
+
   <main>
 
     <nav>
       <ul>
+        <li class="mobile-nav" onclick="toggleNav()">X</li>
         <li><a href="#">link</a></li>
         <li><a href="#">link</a></li>
         <li><a href="#">link</a></li>
@@ -47,15 +50,15 @@
 
     <article>
       <h2>PAGE</h2>
-      <img src="img/img.jpg" alt="">
+      <img src="./img/img.jpg" alt="lich king" class="gallery-image">
     </article>
 
   </main>
 
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./js/plugins.js"></script>
+  <script src="./js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

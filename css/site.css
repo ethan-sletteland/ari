@@ -3,20 +3,59 @@ body {
     color: chartreuse;
     font-family: 'Roboto Mono', sans-serif;
     /*font-size: 48px;*/
+    position: relative;
 }
 
 a {
     color: darkorange;
 }
 
+header {
+    position: sticky;
+}
+
 main {
     display: flex;
+    padding: 10px;
 }
 
 nav {
+    display: none;
+    transition: opacity 350ms;
     width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    height: 100%;
+    padding: 10px;
+}
+
+nav li:first-of-type {
+    list-style: none;
+    text-align: right;
 }
 
 article {
 
+}
+
+.gallery-image {
+    width: 100%;
+}
+
+.mobile-nav {
+    display: block;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 35em) {
+    .mobile-nav {
+        display: none;
+    }
+    nav {
+        display: block;
+        position: relative;
+    }
 }
