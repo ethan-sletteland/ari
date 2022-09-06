@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="css/site.scss">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
 
@@ -38,28 +38,26 @@
   <main>
 
     <nav>
-      <ul>
-        <li class="mobile-nav" onclick="toggleNav()">X</li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
+      <hr>
+      <div class="mobile-nav" onclick="toggleNav()">X</div>
+      <ul id="years"></ul>
+      <hr>
+      <ul id="arts"></ul>
+      <hr>
     </nav>
 
-    <article>
+    <article id="article">
       <h2>PAGE</h2>
-      <p>lorum <span class="blink">IPSUM</span> dolor sit amet</p>
-      <img src="./img/img.jpg" alt="lich king" class="gallery-image">
+      <p>lorum <span class="blink">IPSUM</span> dolor sit amet, <a href="#">consectetur adipiscing</a> elit</p>
+      <img src="img/img.jpg" alt="lich king" class="gallery-image">
     </article>
 
   </main>
 
 
-  <script src="./js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="./js/plugins.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

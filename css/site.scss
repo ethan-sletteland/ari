@@ -1,8 +1,8 @@
+// mobile defaults
 body {
     background-color: black;
     color: chartreuse;
     font-family: 'Roboto Mono', sans-serif;
-    /*font-size: 48px;*/
     position: relative;
 }
 
@@ -35,17 +35,35 @@ nav {
     background-color: black;
     height: 100%;
     padding: 10px;
-}
 
-nav li:first-of-type {
-    list-style: none;
-    text-align: right;
+    #years {
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            &.active {
+                button {
+                    color: red;
+                }
+            }
+        }
+    }
+
 }
 
 article {
 
 }
 
+.mobile-nav {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+}
+
+// utilities
 .blink {
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -65,11 +83,7 @@ article {
     width: 100%;
 }
 
-.mobile-nav {
-    display: block;
-    cursor: pointer;
-}
-
+// desktop
 @media only screen and (min-width: 35em) {
     .mobile-nav {
         display: none;
